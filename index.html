@@ -5,31 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
 </head>
 <body>
     <nav id="navbar">
         <a href="https://mail.google.com/mail/u/0/?ogbl" class="nav-link">Gmail</a>
         <a href="https://www.google.co.ke/imghp?hl=en&authuser=0&ogbl" class="nav-link">Images</a>
-        <a href="" class="nav-link">
+        <a href="" id="apps">
             <i class="material-icons">apps</i>
         </a>
-        <a href="" class="nav-link">
+        <a href="" id="img-link">
             <img src="https://lh3.googleusercontent.com/ogw/ADGmqu-y-eJuHOZuTBNt4bb8fO1flnU1ftbFQGQzrGQ-=s32-c-mo" alt="Profile picture">
         </a>
     </nav>
     <section id="main">
         <img src="https://www.google.co.ke/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         <div class="my-input">
-            <span class="material-icons">search</span>
+            <span class="material-icons" style="color: rgb(180, 180, 180); font-size: 1.3rem">search</span>
             <input type="text" name="search" id="search-box">
             <span class="mic">
                 <svg width="24px" height="24px" class="HPVvwb" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
             </span>
-            <ul>
+            <div id="hr"></div>
+            <ul class="history">
                 <li><span class="material-icons">schedule</span>timer <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>calculator <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>recliner sofa for sale <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>internet service providers <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>holding company <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>laikipia shops naivasha road <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>mi tv stick <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>amazon firestick <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>abs(sin(x)) <span class="remove">Remove</span></li>
+                <li><span class="material-icons">schedule</span>sin(x) <span class="remove">Remove</span></li>
             </ul>
+            <button class="btn">Google Search</button>
+            <button class="btn">I'm Feeling Lucky</button>
+        </div>
+        <div class="links">
+            <button class="btn-2">Google Search</button>
+            <button class="btn-2">I'm Feeling Lucky</button>
+            <div class="languages">
+                Google offered in:
+                <a href="">Hawai'i</a>
+                <a href="">Kiswahili</a>
+            </div>
         </div>
     </section>
+    <footer>
+        <div class="country">Kenya</div>
+        <div class="footer">
+            <ul class="left-ul">
+                <li><a href="https://about.google/?utm_source=google-KE&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank">About</a></li>
+                <li><a href="https://www.google.com/intl/en_ke/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a></li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1" target="_blank">How Search works</a></li>
+            </ul>
+            <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=" target="_blank">Carbon neutral since 2007</a>
+            <ul class="right-ul">
+                <li><a href="https://policies.google.com/privacy?hl=en-KE&fg=1" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en-KE&fg=1" target="_blank" rel="noopener noreferrer">Terms</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
