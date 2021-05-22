@@ -67,19 +67,24 @@ html {
     border-radius: 30px;
     border: 1px solid rgb(231, 231, 231);
     width: 30vw;
-    padding: .5rem 1rem;
+    padding: .8rem 1rem;
     margin: 2rem;
+    /* box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3); */
 }
 
 #main .my-input:hover {
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+#main .my-input:focus-within {
+    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
 #main .my-input:focus-within ~ .links {
     display: none;
 }
 
-#main .history, #main .btn {
+#main .history, #main .buttons {
     display: none;
 }
 
@@ -87,6 +92,7 @@ html {
     display: none;
     border-bottom: 1px solid rgb(224, 224, 224);
     margin-bottom: .8rem;
+    margin-top: .3rem;
 }
 
 #main input {
@@ -95,24 +101,44 @@ html {
     width: 88%;
     position: relative;
     top: -7px;
+    left: .4rem;
     font-size: 1.1rem;
 }
 
 #main input:focus ~ .history,
-#main input:focus ~ .btn,
+/* #main input:focus ~ .buttons, */
 #main input:focus ~ #hr {
     display: block;
 }
 
 .history li > span:first-child {
+    /* font-size: 1rem; */
+}
+
+.history li {
+    display: grid;
+    grid-template-columns: 5% 85% 10%;
+    align-items: center;
+    margin-bottom: .5rem;
+    color: #52188c;
+    font-size: 1.1rem;
+}
+
+.clock, .remove {
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1rem;
+}
+
+#main input:focus ~ .buttons {
+    display: flex;
+    justify-content: center;
 }
 
 #main .links {
     margin-top: .5rem;
 }
 
-#main .btn-2 {
+#main .btn-2, #main .btn {
     margin-right: .8rem;
     margin-bottom: 1.8rem;
     padding: .6rem 1rem;
@@ -122,7 +148,7 @@ html {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
-#main .btn-2:hover {
+#main .btn-2:hover, #main .btn:hover {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -142,7 +168,10 @@ html {
 }
 
 footer {
-    margin-top: 34vh;
+    /* margin-top: 34vh; */
+    position: fixed;
+    top: 90vh;
+    width: 100%;
     color: rgba(0, 0, 0, 0.6);
 }
 
