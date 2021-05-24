@@ -66,7 +66,7 @@ html {
 #main .my-input {
     border-radius: 30px;
     border: 1px solid rgb(231, 231, 231);
-    width: 30vw;
+    width: 30%;
     padding: .8rem 1rem;
     margin: 2rem;
     /* box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3); */
@@ -136,6 +136,7 @@ html {
 
 #main .links {
     margin-top: .5rem;
+    /* display: none; */
 }
 
 #main .btn-2, #main .btn {
@@ -199,4 +200,88 @@ footer div {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1580px) {
+    #main .my-input {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #main .my-input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #main .my-input {
+        width: 70%;
+    }
+
+    .footer .right-ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main .my-input {
+        width: 80%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .country {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main .my-input {
+        width: 90%;
+    }
+
+    #main input {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #main input {
+        width: 80%;
+    }
+
+    .history li {
+        font-size: 1rem;
+    }
+    
+    .clock, .remove {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    #main img {
+        width: 15rem;
+    }
+
+    #main input {
+        width: 70%;
+    }
+
+    #main input:focus ~ .history,
+    #main input:focus ~ .buttons,
+    #main input:focus ~ #hr {
+        display: none;
+    }
+
+    .history, .buttons, #hr {
+        display: none;
+    }
+
+    .links .btn-2 {
+        display: none;
+    }
 }
